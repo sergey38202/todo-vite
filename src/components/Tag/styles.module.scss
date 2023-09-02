@@ -1,0 +1,48 @@
+@import "src/variables";
+
+.container {
+  padding: 0 6px;
+  border-radius: 4px;
+  background: $purple-orchid;
+}
+
+.containerSecondary {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background: $light-blue-gray;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  &::before {
+    border-width: 15px;
+    border-color: transparent transparent transparent #B233A6;
+    transform: translateX(100%);
+  }
+
+  &::after {
+    border-width: 15px;
+    border-color: transparent transparent transparent transparent;
+    transform: translateX(100%);
+    right: 1px;
+  }
+}
+
+.title {
+  color: $white;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.titleSecondary {
+  color: $slate-blue-gray;
+}

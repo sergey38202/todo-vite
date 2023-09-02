@@ -1,0 +1,62 @@
+@import "src/variables";
+
+.container {
+  padding: 10px;
+}
+
+.titleWrapper {
+   margin-bottom: 8px;
+}
+
+.title {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.timeWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.time {
+  margin: 0;
+  color: $primary_green;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.descriptionWrapper {
+  margin-bottom: 8px;
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: $dim-gray;
+  font-size: 13px;
+  line-height: 140%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerTagWrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.footerImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 18px;
+}
